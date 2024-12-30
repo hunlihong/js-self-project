@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        /* background-color: black; */
+      }
+      .bubble {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: yellow;
+        box-shadow: 0 0 30px yellow;
+        border: 1px solid black;
+      }
+      .bubble:nth-child(odd) {
+        background-color: green;
+        box-shadow: 0 0 30px green;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="bubble"></span>
+    <span class="bubble"></span>
+    <span class="bubble"></span>
+  </body>
+</html>

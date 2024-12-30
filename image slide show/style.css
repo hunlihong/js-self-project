@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: url("https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-01h1cv2fh3kw1w8a4zvq6mdhht.png ");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.1);
+  width: 700px;
+  height: 450px;
+  position: relative;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 350px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: absolute;
+  left: 0;
+}
+.img > img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+i {
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  transition: all 0.2s ease-out;
+}
+i:hover {
+  transform: scale(0.8);
+}
+i:nth-child(1) {
+  left: 5%;
+}
+i:nth-child(2) {
+  right: 5%;
+}
